@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-10-24T21:30:13.961Z",
         "reason": "Claude: cream #FFF0C8 is the client's brand colour from the supplied logo kit and printed menus"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "menu.html"
+        ],
+        "createdAt": "2026-10-24T22:02:57.822Z",
+        "reason": "Claude: in-browser contrast audit at 375/768/1440px found no real failures on menu.html; flagged text is white on red brush/price-tag backgrounds drawn via ::before mask (5.9:1), which static detection can't see"
       }
     ]
   }
