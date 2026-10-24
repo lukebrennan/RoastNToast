@@ -347,14 +347,8 @@ h1, h2, h3, h4 {
   width: 30%; aspect-ratio: 1;
   right: 2%; top: 0;
 }
-.badge__ring { width: 100%; height: 100%; animation: spin 18s linear infinite; }
-.badge__core {
-  position: absolute; inset: 22%;
-  border-radius: 50%;
-  background: var(--brown);
-  display: grid; place-items: center;
-}
-.badge__core img { width: 58%; }
+.badge svg { display: block; width: 100%; height: auto; filter: drop-shadow(4px 4px 0 var(--brown)); }
+.badge__spin { transform-origin: 100px 100px; animation: spin 18s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 900px) {
@@ -420,7 +414,8 @@ h1, h2, h3, h4 {
 .step p { color: rgba(255, 240, 200, .86); max-width: 30ch; }
 .step a { color: var(--yolk); font-weight: 700; }
 .step:not(:last-child)::after {
-  content: ""; position: absolute; top: 46px; right: -12%; width: 22%; height: 18px;
+  /* centred in the empty space between this number and the next one */
+  content: ""; position: absolute; top: 46px; left: calc(50% + 30px); width: 90px; height: 18px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 18'%3E%3Cpath d='M2 9 Q20 2 40 9 T70 9' fill='none' stroke='%23F87900' stroke-width='3' stroke-linecap='round' stroke-dasharray='2 7'/%3E%3Cpath d='M66 3 L76 9 L66 15' fill='none' stroke='%23F87900' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 @media (max-width: 820px) {

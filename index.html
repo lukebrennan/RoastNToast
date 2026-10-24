@@ -120,16 +120,21 @@
           <span class="plate-label plate-label--b">Roast</span>
 
           <div class="badge">
-            <svg class="badge__ring" viewBox="0 0 200 200">
-              <!-- baseline r=67 so the caps sit centred in the band between the core (r=56) and the rim (r=96) -->
-              <defs><path id="ring" d="M100,100 m-67,0 a67,67 0 1,1 134,0 a67,67 0 1,1 -134,0"/></defs>
-              <circle cx="100" cy="100" r="96" fill="#FFB703" stroke="#450F05" stroke-width="4"/>
-              <circle cx="100" cy="100" r="89" fill="none" stroke="#450F05" stroke-width="1.5" stroke-dasharray="3 5" opacity=".55"/>
-              <text font-family="Anton, Impact, sans-serif" font-size="16" fill="#450F05" textLength="418" lengthAdjust="spacing">
-                <textPath href="#ring" textLength="418" lengthAdjust="spacing">BEST BREKKY IN PREKKY ★ HOT TO YOUR DOOR ★</textPath>
-              </text>
+            <svg viewBox="0 0 200 200">
+              <!-- Rim r96, band to r86 (dashed), core r56. Text baseline r66 centres the caps in the band. -->
+              <defs><path id="ring" d="M100,100 m-66,0 a66,66 0 1,1 132,0 a66,66 0 1,1 -132,0"/></defs>
+              <circle cx="100" cy="100" r="96" fill="#450F05"/>
+              <circle cx="100" cy="100" r="91" fill="#FFB703"/>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="#450F05" stroke-width="1.5" stroke-dasharray="3 4.5" opacity=".5"/>
+              <g class="badge__spin">
+                <text font-family="Anton, Impact, sans-serif" font-size="15" fill="#450F05">
+                  <textPath href="#ring" textLength="412" lengthAdjust="spacing">BEST BREKKY IN PREKKY ★ HOT TO YOUR DOOR ★</textPath>
+                </text>
+              </g>
+              <circle cx="100" cy="100" r="56" fill="#450F05"/>
+              <circle cx="100" cy="100" r="50" fill="none" stroke="#FFF0C8" stroke-width="1.5" opacity=".35"/>
+              <image href="assets/logos/brand-icon-white.svg" x="79" y="74" width="42" height="52"/>
             </svg>
-            <div class="badge__core"><img src="assets/logos/brand-icon-white.svg" alt=""></div>
           </div>
         </div>
       </div>
