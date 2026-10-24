@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/builder.css"><!-- BREKKY BUILDER -->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -243,6 +244,60 @@
       </div>
     </section>
 
+    <!-- ============ BREKKY BUILDER: start ============
+         Self-contained. To remove: delete this block, the builder.css <link>,
+         the builder.js <script>, and the two builder files. -->
+    <section class="section builder torn-top torn-bottom" id="builder" aria-labelledby="builder-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Have a go!</span>
+          <h2 id="builder-title" class="section-title">Build your brekky</h2>
+          <p>Pick your plates, pile on the extras and see your total before you ring. Then just read your order out when you call.</p>
+        </div>
+
+        <div class="builder__grid" id="builder-app">
+          <div class="builder__picker">
+            <div class="builder__tabs" role="tablist" aria-label="Menu sections"></div>
+            <div class="builder__panels"></div>
+            <a class="builder__jump" href="#order-pad"><span>Your order:</span> <strong data-count>Nothing yet</strong> <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <aside class="pad" id="order-pad" aria-labelledby="pad-title">
+            <div class="pad__head">
+              <img src="assets/logos/brand-icon-colour.svg" alt="" width="30" height="37">
+              <div>
+                <h3 id="pad-title">Your order</h3>
+                <span class="pad__sub">Roast ’N Toast · order pad</span>
+              </div>
+            </div>
+
+            <p class="pad__empty">Your plate’s looking a bit empty. Pick a brekky to get started!</p>
+            <ul class="pad__lines" aria-live="polite"></ul>
+
+            <dl class="pad__sums" hidden>
+              <div><dt>Food</dt><dd data-subtotal>£0.00</dd></div>
+              <div><dt>Delivery</dt><dd>£3.00</dd></div>
+              <div class="pad__total"><dt>Total</dt><dd data-total aria-live="polite">£0.00</dd></div>
+            </dl>
+
+            <div class="pad__say" hidden>
+              <span class="pad__say-label">When you ring, just say:</span>
+              <p data-say></p>
+            </div>
+
+            <a class="btn pad__call" href="tel:07984730030">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+              Call <span data-phone>07984 730030</span>
+            </a>
+            <button type="button" class="pad__clear" data-clear hidden>Start again</button>
+            <p class="pad__note">Prices from our menu. Your total is a guide; we’ll confirm it when you ring.</p>
+          </aside>
+        </div>
+        <noscript><p class="builder__noscript">See our <a href="menu.html">full menu</a> and call 07984 730030 to order.</p></noscript>
+      </div>
+    </section>
+    <!-- ============ BREKKY BUILDER: end ============ -->
+
     <!-- ============ REAL FOOD ============ -->
     <section class="section real" aria-labelledby="real-title">
       <div class="wrap real__grid">
@@ -352,5 +407,6 @@
   </nav>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/builder.js"></script><!-- BREKKY BUILDER -->
 </body>
 </html>
