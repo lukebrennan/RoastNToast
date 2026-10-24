@@ -994,6 +994,8 @@ h1, h2, h3, h4 {
 .builder .section-title { color: var(--cream); }
 .builder .kicker { color: var(--yolk); }
 .builder .section-head p { color: rgba(255, 240, 200, .9); }
+.builder .section-head { margin-bottom: clamp(22px, 2.6vw, 32px); }
+.builder .section-head p { margin-bottom: 0; }
 
 .builder__grid {
   display: grid;
