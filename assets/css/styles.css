@@ -845,3 +845,57 @@ h1, h2, h3, h4 {
 .offer.reveal.is-in:nth-child(1) { transform: rotate(-1deg); }
 .offer.reveal.is-in:nth-child(2) { transform: rotate(1deg); }
 .no-js .reveal { opacity: 1; transform: none; }
+
+/* ---------- quality ---------- */
+.quality__grid {
+  display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 5vw, 72px); align-items: center;
+}
+.quality__copy { position: relative; }
+.quality__copy .section-title { margin-bottom: 22px; }
+.quality__copy p { font-size: 1.12rem; max-width: 44ch; }
+.quality__seal { width: 170px; margin-top: 18px; transform: rotate(-8deg); }
+.quality__seal svg { width: 100%; height: auto; overflow: visible; }
+
+.tickets {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+}
+.ticket {
+  position: relative;
+  background: var(--white);
+  border: 3px solid var(--brown);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 18px 20px 16px 22px;
+}
+.ticket::before, .ticket::after {
+  /* ticket notches */
+  content: ""; position: absolute; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  background: var(--paper); border: 3px solid var(--brown); border-radius: 50%;
+}
+.ticket::before { left: -11px; clip-path: inset(0 0 0 50%); }
+.ticket::after { right: -11px; clip-path: inset(0 50% 0 0); }
+.ticket:nth-child(odd) { transform: rotate(-1.2deg); }
+.ticket:nth-child(even) { transform: rotate(1.2deg); }
+.ticket:nth-child(3n+2) { background: var(--cream); }
+.ticket h3 {
+  font-size: 1.7rem; color: var(--red); margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.ticket h3::before {
+  content: "✓"; font-family: var(--body); font-weight: 800; font-size: 1rem;
+  width: 26px; height: 26px; flex: none; display: grid; place-items: center;
+  background: var(--brown); color: var(--cream); border-radius: 50%;
+}
+.ticket p { margin: 0; font-size: .98rem; }
+.ticket.reveal.is-in:nth-child(odd) { transform: rotate(-1.2deg); }
+.ticket.reveal.is-in:nth-child(even) { transform: rotate(1.2deg); }
+
+@media (max-width: 900px) {
+  .quality__grid { grid-template-columns: 1fr; }
+  .quality__seal { position: absolute; right: 0; top: -10px; width: 120px; margin: 0; }
+}
+@media (max-width: 520px) {
+  .tickets { grid-template-columns: 1fr; }
+  .quality__seal { width: 96px; top: -30px; }
+}
