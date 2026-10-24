@@ -318,7 +318,8 @@ h1, h2, h3, h4 {
   border: 4px solid var(--brown);
   box-shadow: 10px 12px 0 var(--brown);
 }
-.plate img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+/* square photos + width-driven height keep these perfect circles even where aspect-ratio is unsupported */
+.plate img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
 .plate--main { width: 78%; aspect-ratio: 1; top: 4%; left: 2%; }
 .plate--side { width: 46%; aspect-ratio: 1; right: 0; bottom: 2%; animation: bob 6s ease-in-out infinite; will-change: transform; }
 @keyframes bob { 50% { transform: translateY(-8px) rotate(2deg); } }
