@@ -38,6 +38,24 @@
         ],
         "createdAt": "2026-10-24T22:14:55.599Z",
         "reason": "Claude: rendered contrast audit (with builder in use) finds no failures; flags are white text on ::before brush shapes (5.9:1), the 2rem+ yolk-on-red kicker (3.5:1, large text), and disabled stepper buttons (exempt under WCAG 1.4.3)"
+      },
+      {
+        "rule": "organic-clip-path",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-24T22:23:29.937Z",
+        "reason": "Claude: only use is the torn ends of a 132x36px decorative masking-tape strip on the polaroid (shared styles.css); a raster adds a request for no visible gain at that size"
+      },
+      {
+        "rule": "organic-clip-path",
+        "value": "*",
+        "files": [
+          "menu.html"
+        ],
+        "createdAt": "2026-10-24T22:23:29.956Z",
+        "reason": "Claude: only use is the torn ends of a 132x36px decorative masking-tape strip on the polaroid (shared styles.css); a raster adds a request for no visible gain at that size"
       }
     ]
   }
