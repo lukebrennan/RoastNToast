@@ -261,8 +261,7 @@ h1, h2, h3, h4 {
 }
 .stamp__dot {
   width: 12px; height: 12px; border-radius: 50%; background: #2DBE4E;
-  box-shadow: 0 0 0 0 rgba(45,190,78,.6);
-  animation: pulse 1.8s infinite;
+  box-shadow: 0 0 0 3px rgba(45,190,78,.25);
 }
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(45,190,78,.55); }
