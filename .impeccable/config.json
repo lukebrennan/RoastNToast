@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-24T22:02:57.822Z",
         "reason": "Claude: in-browser contrast audit at 375/768/1440px found no real failures on menu.html; flagged text is white on red brush/price-tag backgrounds drawn via ::before mask (5.9:1), which static detection can't see"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-24T22:14:55.599Z",
+        "reason": "Claude: rendered contrast audit (with builder in use) finds no failures; flags are white text on ::before brush shapes (5.9:1), the 2rem+ yolk-on-red kicker (3.5:1, large text), and disabled stepper buttons (exempt under WCAG 1.4.3)"
       }
     ]
   }
