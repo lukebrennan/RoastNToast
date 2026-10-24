@@ -479,7 +479,9 @@ h1, h2, h3, h4 {
 }
 
 /* ---------- real food ---------- */
-.real { padding-top: 0; }
+/* sits under the torn edge of the builder band, so it needs full top padding */
+.real { padding-top: clamp(80px, 10vw, 130px); }
+.real .section-title { font-size: clamp(2.6rem, 5.4vw, 4.6rem); }
 .real__grid {
   display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
   gap: clamp(28px, 5vw, 72px); align-items: center;
@@ -940,4 +942,14 @@ h1, h2, h3, h4 {
   .item--photo .item__top { flex-direction: column; align-items: flex-start; gap: 8px; }
   .item--photo h3 { font-size: 1.4rem; }
   .item--photo .price-tag { font-size: 1rem; }
+}
+
+/* keep nav items on one line between the mobile breakpoint and wide desktop */
+.nav__links a { white-space: nowrap; }
+@media (min-width: 941px) and (max-width: 1180px) {
+  .nav { gap: 14px; }
+  .nav__logo img { height: 36px; }
+  .nav__links { gap: 12px; }
+  .nav__links a { font-size: .98rem; }
+  .nav__links .btn--sm { padding: 10px 12px 8px; }
 }
