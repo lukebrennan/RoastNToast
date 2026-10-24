@@ -4,10 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Menu | Roast ’N Toast — Breakfast &amp; Roast Dinner Delivery</title>
-  <meta name="description" content="The Roast ’N Toast menu: Standard Breakfast £9, Large Breakfast £12, Veggie Breakfast £9, Family Breakfast £30, toasted sandwiches, extras and roast dinners. Delivery only, £3 delivery charge. Call 07984 730030.">
+  <meta name="description" content="Roast ’N Toast menu: full English breakfasts from £9, toasties, extras and roast dinners. Delivery to Prescot &amp; Knowsley, £3. Call 07984 730030.">
+  <link rel="canonical" href="https://lukebrennan.github.io/RoastNToast/menu.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Roast ’N Toast">
+  <meta property="og:url" content="https://lukebrennan.github.io/RoastNToast/menu.html">
   <meta property="og:title" content="The Roast ’N Toast Menu">
   <meta property="og:description" content="Full English breakfasts, toasties &amp; roast dinners delivered to Prescot &amp; Knowsley.">
-  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lukebrennan.github.io/RoastNToast/assets/img/og-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Roast ’N Toast: The best brekky in Prekky! Breakfast &amp; roast dinner delivery, Prescot &amp; Knowsley">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
@@ -16,9 +25,8 @@
   <link rel="manifest" href="favicons/site.webmanifest">
   <meta name="theme-color" content="#450F05">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -143,7 +151,7 @@
         <div class="board__head"><h2 id="roasts-title" class="brush brush--brown">Roast Dinners</h2></div>
 
         <div class="roast-banner">
-          <img src="assets/img/roast-beef-02.jpg" alt="A roast beef dinner with Yorkshire pudding, roast potatoes, carrots, broccoli, peas and gravy" width="1200" height="900" loading="lazy">
+          <img src="assets/img/roast-beef-02-800.webp" srcset="assets/img/roast-beef-02-480.webp 480w, assets/img/roast-beef-02-800.webp 800w, assets/img/roast-beef-02-1200.webp 1200w" sizes="(max-width: 720px) 92vw, 540px" alt="A roast beef dinner with Yorkshire pudding, roast potatoes, carrots, broccoli, peas and gravy" width="1200" height="900" loading="lazy">
           <div class="roast-banner__copy">
             <span class="script">Proper Sunday dinner</span>
             <h3>Roast dinners, delivered</h3>
@@ -153,17 +161,17 @@
 
         <ul class="items">
           <li class="item item--photo">
-            <img class="item__thumb" src="assets/img/roast-beef-01-sm.jpg" alt="Roast beef dinner" width="420" height="315" loading="lazy">
+            <img class="item__thumb" src="assets/img/roast-beef-01-200.webp" alt="Roast beef dinner" width="200" height="150" loading="lazy">
             <div class="item__top"><h3>Roast Beef Dinner</h3><span class="item__leader"></span><span class="price-tag price-tag--ask">Ask us</span></div>
             <p>Quality sliced roast beef with roast potatoes, seasonal veg, Yorkshire pudding &amp; gravy</p>
           </li>
           <li class="item item--photo">
-            <img class="item__thumb" src="assets/img/roast-chicken-01-sm.jpg" alt="Roast chicken dinner" width="420" height="315" loading="lazy">
+            <img class="item__thumb" src="assets/img/roast-chicken-01-200.webp" alt="Roast chicken dinner" width="200" height="150" loading="lazy">
             <div class="item__top"><h3>Roast Chicken Dinner</h3><span class="item__leader"></span><span class="price-tag price-tag--ask">Ask us</span></div>
             <p>Roast chicken with stuffing, roast potatoes, seasonal veg, Yorkshire pudding &amp; gravy</p>
           </li>
           <li class="item item--photo">
-            <img class="item__thumb" src="assets/img/roast-pork-02-sm.jpg" alt="Roast pork dinner with crackling" width="420" height="315" loading="lazy">
+            <img class="item__thumb" src="assets/img/roast-pork-02-200.webp" alt="Roast pork dinner with crackling" width="200" height="150" loading="lazy">
             <div class="item__top"><h3>Roast Pork Dinner</h3><span class="item__leader"></span><span class="price-tag price-tag--ask">Ask us</span></div>
             <p>Roast pork with roast potatoes, seasonal veg, Yorkshire pudding &amp; gravy</p>
           </li>
@@ -203,7 +211,7 @@
           </div>
         </div>
         <div>
-          <h4>Order</h4>
+          <h2 class="footer__heading">Order</h2>
           <ul>
             <li><a href="tel:07984730030">07984 730030</a></li>
             <li><a href="mailto:roastntoast2026@hotmail.com">roastntoast2026@hotmail.com</a></li>
@@ -212,7 +220,7 @@
           </ul>
         </div>
         <div>
-          <h4>Pages</h4>
+          <h2 class="footer__heading">Pages</h2>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -238,6 +246,6 @@
     <a href="menu.html#roasts">Roasts</a>
   </nav>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

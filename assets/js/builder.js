@@ -1,7 +1,6 @@
 /* ==========================================================================
    "Build your brekky" order calculator (home page)
-   Self-contained: remove this file, assets/css/builder.css and the
-   BREKKY BUILDER block in index.html to take it out.
+   Markup: BREKKY BUILDER block in index.html. Styles: end of styles.css.
    Prices are in pence and must match menu.html.
    ========================================================================== */
 (function () {

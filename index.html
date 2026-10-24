@@ -4,11 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roast ’N Toast | Breakfast &amp; Roast Dinner Delivery in Prescot &amp; Knowsley</title>
-  <meta name="description" content="Roast ’N Toast — your new, local breakfast &amp; roast dinner delivery service. Full English breakfasts made with the best quality products, from £9, delivered to Prescot &amp; Knowsley. Call 07984 730030 to order.">
+  <meta name="description" content="Breakfast &amp; roast dinner delivery in Prescot &amp; Knowsley. Full English from £9, made with quality products. Call 07984 730030 to order.">
+  <link rel="canonical" href="https://lukebrennan.github.io/RoastNToast/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Roast ’N Toast">
+  <meta property="og:url" content="https://lukebrennan.github.io/RoastNToast/">
   <meta property="og:title" content="Roast ’N Toast | The Best Brekky in Prekky!">
   <meta property="og:description" content="Breakfast &amp; roast dinner delivery to Prescot &amp; Knowsley. Call 07984 730030 to order.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/breakfast-topdown.jpg">
+  <meta property="og:image" content="https://lukebrennan.github.io/RoastNToast/assets/img/og-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Roast ’N Toast: The best brekky in Prekky! Breakfast &amp; roast dinner delivery, Prescot &amp; Knowsley">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FoodEstablishment", "name": "Roast ’N Toast", "description": "Breakfast & roast dinner delivery service in Prescot & Knowsley.", "url": "https://lukebrennan.github.io/RoastNToast/", "image": "https://lukebrennan.github.io/RoastNToast/assets/img/og-share.jpg", "logo": "https://lukebrennan.github.io/RoastNToast/favicons/android-chrome-512x512.png", "telephone": "+447984730030", "email": "roastntoast2026@hotmail.com", "servesCuisine": "British", "address": {"@type": "PostalAddress", "addressLocality": "Prescot", "addressCountry": "GB"}, "areaServed": [{"@type": "Place", "name": "Prescot"}, {"@type": "Place", "name": "Knowsley"}], "hasMenu": "https://lukebrennan.github.io/RoastNToast/menu.html", "sameAs": ["https://www.facebook.com/profile.php?id=61595454547957", "https://www.instagram.com/roast_n_toast_/"]}</script>
 
   <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
@@ -17,11 +26,9 @@
   <link rel="manifest" href="favicons/site.webmanifest">
   <meta name="theme-color" content="#450F05">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/builder.css"><!-- BREKKY BUILDER -->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -104,37 +111,38 @@
         <div class="hero__art" aria-hidden="true">
           <div class="hero__splat"></div>
 
-          <svg class="steam" viewBox="0 0 120 90">
-            <path d="M28 88c-14-18 10-28-2-48C18 26 30 14 34 4c2 16-8 22 0 38 8 16-6 30-6 46z" fill="#C70906"/>
-            <path d="M60 88c-16-22 12-34-2-58C50 16 62 8 64 0c4 18-6 26 2 44 8 18-6 30-6 44z" fill="#F87900"/>
-            <path d="M92 88c-14-18 10-28-2-48C82 26 94 14 98 4c2 16-8 22 0 38 8 16-6 30-6 46z" fill="#C70906"/>
-          </svg>
+          <div class="steam">
+            <svg viewBox="16 0 24 90"><path d="M28 88c-14-18 10-28-2-48C18 26 30 14 34 4c2 16-8 22 0 38 8 16-6 30-6 46z" fill="#C70906"/></svg>
+            <svg viewBox="46 0 24 90"><path d="M60 88c-16-22 12-34-2-58C50 16 62 8 64 0c4 18-6 26 2 44 8 18-6 30-6 44z" fill="#F87900"/></svg>
+            <svg viewBox="80 0 24 90"><path d="M92 88c-14-18 10-28-2-48C82 26 94 14 98 4c2 16-8 22 0 38 8 16-6 30-6 46z" fill="#C70906"/></svg>
+          </div>
 
           <div class="plate plate--main">
-            <img src="assets/img/breakfast-topdown.jpg" alt="" width="1200" height="900">
+            <img src="assets/img/breakfast-topdown-800.webp" srcset="assets/img/breakfast-topdown-480.webp 480w, assets/img/breakfast-topdown-800.webp 800w, assets/img/breakfast-topdown-1200.webp 1200w" sizes="(max-width: 900px) 72vw, 440px" alt="" width="1200" height="900" fetchpriority="high">
           </div>
           <div class="plate plate--side">
-            <img src="assets/img/roast-chicken-02.jpg" alt="" width="1200" height="900" style="object-position: 52% 50%;">
+            <img src="assets/img/roast-chicken-02-800.webp" srcset="assets/img/roast-chicken-02-480.webp 480w, assets/img/roast-chicken-02-800.webp 800w, assets/img/roast-chicken-02-1200.webp 1200w" sizes="(max-width: 900px) 42vw, 260px" alt="" width="1200" height="900" style="object-position: 52% 50%;">
           </div>
 
           <span class="plate-label plate-label--a">Brekky</span>
           <span class="plate-label plate-label--b">Roast</span>
 
           <div class="badge">
-            <svg viewBox="0 0 200 200">
-              <!-- Rim r96, band to r86 (dashed), core r56. Text baseline r66 centres the caps in the band. -->
-              <defs><path id="ring" d="M100,100 m-66,0 a66,66 0 1,1 132,0 a66,66 0 1,1 -132,0"/></defs>
+            <!-- Rim r96, band to r86 (dashed), core r56. Text baseline r66 centres the caps in the band. -->
+            <svg class="badge__base" viewBox="0 0 200 200">
+              <circle cx="104" cy="104" r="96" fill="#450F05"/>
               <circle cx="100" cy="100" r="96" fill="#450F05"/>
               <circle cx="100" cy="100" r="91" fill="#FFB703"/>
               <circle cx="100" cy="100" r="86" fill="none" stroke="#450F05" stroke-width="1.5" stroke-dasharray="3 4.5" opacity=".5"/>
-              <g class="badge__spin">
-                <text font-family="Anton, Impact, sans-serif" font-size="15" fill="#450F05">
-                  <textPath href="#ring" textLength="412" lengthAdjust="spacing">BEST BREKKY IN PREKKY ★ HOT TO YOUR DOOR ★</textPath>
-                </text>
-              </g>
               <circle cx="100" cy="100" r="56" fill="#450F05"/>
               <circle cx="100" cy="100" r="50" fill="none" stroke="#FFF0C8" stroke-width="1.5" opacity=".35"/>
               <image href="assets/logos/brand-icon-white.svg" x="79" y="74" width="42" height="52"/>
+            </svg>
+            <svg class="badge__ring" viewBox="0 0 200 200">
+              <defs><path id="ring" d="M100,100 m-66,0 a66,66 0 1,1 132,0 a66,66 0 1,1 -132,0"/></defs>
+              <text font-family="Anton, Impact, sans-serif" font-size="15" fill="#450F05">
+                <textPath href="#ring" textLength="412" lengthAdjust="spacing">BEST BREKKY IN PREKKY ★ HOT TO YOUR DOOR ★</textPath>
+              </text>
             </svg>
           </div>
         </div>
@@ -212,7 +220,7 @@
           <article class="offer reveal">
             <div class="offer__price"><div><small>From</small><span>£9</span></div></div>
             <div class="offer__img">
-              <img src="assets/img/standard-breakfast.jpg" alt="A full English breakfast: bacon, sausage, fried egg, black pudding, mushrooms, beans, grilled tomato and toast" width="1200" height="900" loading="lazy">
+              <img src="assets/img/standard-breakfast-800.webp" srcset="assets/img/standard-breakfast-480.webp 480w, assets/img/standard-breakfast-800.webp 800w, assets/img/standard-breakfast-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 560px" alt="A full English breakfast: bacon, sausage, fried egg, black pudding, mushrooms, beans, grilled tomato and toast" width="1200" height="900" loading="lazy">
               <span class="offer__tag brush">Breakfast</span>
             </div>
             <div class="offer__body">
@@ -230,7 +238,7 @@
           <!-- PLACEHOLDER: roast dinner copy below is temporary until the client confirms their roast menu & prices. -->
           <article class="offer reveal">
             <div class="offer__img">
-              <img src="assets/img/roast-beef-01.jpg" alt="A roast beef dinner with Yorkshire pudding, roast potatoes, carrots, peas, cabbage and gravy" width="1200" height="900" loading="lazy">
+              <img src="assets/img/roast-beef-01-800.webp" srcset="assets/img/roast-beef-01-480.webp 480w, assets/img/roast-beef-01-800.webp 800w, assets/img/roast-beef-01-1200.webp 1200w" sizes="(max-width: 820px) 92vw, 560px" alt="A roast beef dinner with Yorkshire pudding, roast potatoes, carrots, peas, cabbage and gravy" width="1200" height="900" loading="lazy">
               <span class="offer__tag brush brush--brown">Roast dinner</span>
             </div>
             <div class="offer__body">
@@ -245,8 +253,7 @@
     </section>
 
     <!-- ============ BREKKY BUILDER: start ============
-         Self-contained. To remove: delete this block, the builder.css <link>,
-         the builder.js <script>, and the two builder files. -->
+         Logic in assets/js/builder.js; styles in the "Build your brekky" part of styles.css. -->
     <section class="section builder torn-top torn-bottom" id="builder" aria-labelledby="builder-title">
       <div class="wrap">
         <div class="section-head reveal">
@@ -302,7 +309,7 @@
     <section class="section real" aria-labelledby="real-title">
       <div class="wrap real__grid">
         <figure class="polaroid reveal">
-          <img src="assets/img/veggie-breakfast.jpg" alt="A veggie breakfast: vegetarian sausage, fried egg, mushrooms, beans, hash brown, grilled tomato and toast" width="1200" height="900" loading="lazy" style="object-position: 40% 50%;">
+          <img src="assets/img/veggie-breakfast-800.webp" srcset="assets/img/veggie-breakfast-480.webp 480w, assets/img/veggie-breakfast-800.webp 800w, assets/img/veggie-breakfast-1200.webp 1200w" sizes="(max-width: 820px) 320px, 400px" alt="A veggie breakfast: vegetarian sausage, fried egg, mushrooms, beans, hash brown, grilled tomato and toast" width="1200" height="900" loading="lazy" style="object-position: 40% 50%;">
           <figcaption>Veggies sorted too!</figcaption>
         </figure>
         <div class="real__copy reveal">
@@ -371,7 +378,7 @@
           </div>
         </div>
         <div>
-          <h4>Order</h4>
+          <h2 class="footer__heading">Order</h2>
           <ul>
             <li><a href="tel:07984730030">07984 730030</a></li>
             <li><a href="mailto:roastntoast2026@hotmail.com">roastntoast2026@hotmail.com</a></li>
@@ -380,7 +387,7 @@
           </ul>
         </div>
         <div>
-          <h4>Pages</h4>
+          <h2 class="footer__heading">Pages</h2>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -406,7 +413,7 @@
     <a href="menu.html">Menu</a>
   </nav>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/builder.js"></script><!-- BREKKY BUILDER -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/builder.js" defer></script><!-- BREKKY BUILDER -->
 </body>
 </html>

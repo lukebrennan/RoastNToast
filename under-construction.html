@@ -14,9 +14,8 @@
   <link rel="manifest" href="favicons/site.webmanifest">
   <meta name="theme-color" content="#450F05">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -94,7 +93,7 @@
           </div>
         </div>
         <div>
-          <h4>Order</h4>
+          <h2 class="footer__heading">Order</h2>
           <ul>
             <li><a href="tel:07984730030">07984 730030</a></li>
             <li><a href="mailto:roastntoast2026@hotmail.com">roastntoast2026@hotmail.com</a></li>
@@ -103,7 +102,7 @@
           </ul>
         </div>
         <div>
-          <h4>Pages</h4>
+          <h2 class="footer__heading">Pages</h2>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -129,6 +128,6 @@
     <a href="menu.html">Menu</a>
   </nav>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
