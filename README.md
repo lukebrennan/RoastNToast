@@ -14,7 +14,7 @@ Plain static HTML/CSS/JS, so no build step. Works on GitHub Pages as is.
 ## Content notes
 - Breakfast, toastie, extras prices and the £3 delivery charge are taken from the client's own Facebook/Instagram menu posts.
 - **Roast dinners are placeholder content.** Dish names and descriptions are temporary and prices show "Ask us". Search for `PLACEHOLDER` in `index.html` and `menu.html`.
-- Food photos are from Unsplash (free licence).
+- Food photos were supplied for the project (breakfast and roast dinner sets).
 
 ## Local preview
 ```

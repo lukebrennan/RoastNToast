@@ -924,3 +924,20 @@ h1, h2, h3, h4 {
   .item h3 { flex: 1; }
   .item .item__leader { display: none; }
 }
+
+/* roast menu thumbnails */
+.item--photo { display: grid; grid-template-columns: 84px 1fr; column-gap: 18px; align-items: start; }
+.item--photo .item__thumb {
+  grid-row: span 2;
+  width: 84px; height: 84px; object-fit: cover; border-radius: 50%;
+  border: 3px solid var(--brown); box-shadow: 3px 3px 0 var(--brown);
+}
+.item--photo h3, #roasts .item h3 { font-size: clamp(1.4rem, 1.9vw, 1.6rem); }
+@media (max-width: 520px) {
+  .item--photo { grid-template-columns: 64px 1fr; column-gap: 14px; }
+  .item--photo .item__thumb { width: 64px; height: 64px; }
+  /* price drops under the name so the name gets the full width */
+  .item--photo .item__top { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .item--photo h3 { font-size: 1.4rem; }
+  .item--photo .price-tag { font-size: 1rem; }
+}
