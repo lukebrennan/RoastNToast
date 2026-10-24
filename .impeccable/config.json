@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "assets/css/styles.css"
+        ],
+        "createdAt": "2026-10-24T21:30:13.935Z",
+        "reason": "Claude: L648 is the 4px divider between the two halves of the mobile call bar, not a card accent"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "*.html"
+        ],
+        "createdAt": "2026-10-24T21:30:13.961Z",
+        "reason": "Claude: cream #FFF0C8 is the client's brand colour from the supplied logo kit and printed menus"
+      }
+    ]
+  }
+}

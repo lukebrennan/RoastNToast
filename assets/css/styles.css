@@ -324,7 +324,7 @@ h1, h2, h3, h4 {
   font-family: var(--display); text-transform: uppercase; letter-spacing: .04em;
   background: var(--yolk); color: var(--brown);
   border: 3px solid var(--brown);
-  padding: 7px 12px 5px; font-size: 1rem; line-height: 1;
+  padding: 9px 14px 7px; font-size: 1rem; line-height: 1;
   box-shadow: var(--shadow-hard-sm);
 }
 .plate-label--a { left: 0; bottom: 30%; transform: rotate(-6deg); }
@@ -740,7 +740,7 @@ h1, h2, h3, h4 {
 .item__flag {
   display: inline-block; margin-top: 10px;
   font-family: var(--display); text-transform: uppercase; letter-spacing: .05em; font-size: .9rem;
-  background: var(--yolk); color: var(--brown); padding: 4px 10px 3px; border: 2px solid var(--brown);
+  background: var(--yolk); color: var(--brown); padding: 8px 14px 6px; border: 2px solid var(--brown);
 }
 
 .price-tag {
