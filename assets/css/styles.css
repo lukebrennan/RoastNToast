@@ -361,6 +361,8 @@ h1, h2, h3, h4 {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__art { max-width: 460px; margin-top: 8px; }
   .hero__title { margin-top: 18px; }
+  /* keep the hero calmer on small screens: roast plate stays put */
+  .plate--side { animation: none; will-change: auto; }
 }
 @media (max-width: 520px) {
   .stamp { font-size: .82rem; letter-spacing: .04em; padding: 7px 10px 5px; }
