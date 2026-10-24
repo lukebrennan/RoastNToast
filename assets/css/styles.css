@@ -918,7 +918,7 @@ h1, h2, h3, h4 {
    Design-pass refinements
    ========================================================================== */
 .nowrap { white-space: nowrap; }
-.delivery-card a { color: inherit; text-underline-offset: 3px; }
+.delivery-card p a { color: inherit; text-underline-offset: 3px; }
 .call { padding-bottom: clamp(40px, 6vw, 72px); }
 
 /* comfortable tap targets for footer links */
@@ -972,9 +972,12 @@ h1, h2, h3, h4 {
   .nav__links .btn--sm { padding: 10px 12px 8px; }
 }
 
-/* menu page: jump links must clear the header, the sticky section bar
-   and the heading that overhangs the top of each board */
-.board, .delivery-card { scroll-margin-top: calc(var(--header-h) + 82px + clamp(1.9rem, 8.6vw, 4.6rem)); }
+/* menu page: html's scroll-padding already clears the header; this adds the
+   sticky section bar plus the heading that overhangs the top of each board */
+.board { scroll-margin-top: calc(78px + .62 * clamp(1.9rem, 8.6vw, 4.6rem) + 12px); }
+.delivery-card { scroll-margin-top: 90px; }
+/* toasties board keeps its headings inside the padding, so the box itself can tuck under the bar */
+.board--split { scroll-margin-top: calc(90px - clamp(40px, 6vw, 64px)); }
 
 /* ==========================================================================
    "Build your brekky" order calculator (home page)
@@ -1095,7 +1098,7 @@ h1, h2, h3, h4 {
   border-bottom: 3px double var(--brown);
 }
 .pad__head h3 { font-size: 1.9rem; line-height: .95; }
-.pad__sub { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: #6b4a3c; }
+.pad__sub { font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: #6b4a3c; }
 .pad__empty { color: #6b4a3c; font-style: italic; margin: 6px 0 18px; }
 
 .pad__lines { list-style: none; margin: 0; padding: 0; font-variant-numeric: tabular-nums; }
@@ -1142,7 +1145,7 @@ h1, h2, h3, h4 {
   padding: 12px 16px;
 }
 .pad__clear:hover { color: var(--red); }
-.pad__note { font-size: .8rem; color: #6b4a3c; text-align: center; margin: 12px 0 0; }
+.pad__note { font-size: .85rem; color: #6b4a3c; text-align: center; margin: 12px 0 0; }
 
 .builder__jump { display: none; }
 .builder__noscript { margin-top: 20px; }

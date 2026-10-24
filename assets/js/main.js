@@ -67,6 +67,17 @@
     });
   }
 
+  // Arriving via a link like menu.html#roasts: the browser jumps before fonts
+  // and layout settle, so line the section up again once everything has loaded
+  if (location.hash.length > 1) {
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) {
+      var align = function () { target.scrollIntoView({ block: "start", behavior: "instant" }); };
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { requestAnimationFrame(align); });
+      window.addEventListener("load", align, { once: true });
+    }
+  }
+
   // Footer year
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
